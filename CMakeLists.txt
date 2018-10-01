@@ -76,3 +76,7 @@ add_library(Gumbo_static STATIC ${Gumbo_SRCS})
 set_target_properties(Gumbo PROPERTIES VERSION ${Gumbo_VERSION})
 set_target_properties(Gumbo_static PROPERTIES OUTPUT_NAME "Gumbo")
 
+install(TARGETS Gumbo  Gumbo_static
+	LIBRARY DESTINATION lib
+    ARCHIVE DESTINATION lib
+)
