@@ -70,6 +70,7 @@ if(CMAKE_C_COMPILER_ID EQUAL GNU OR
 endif()
 
 # Library target.
+add_compile_options(-fPIC)
 add_library(Gumbo SHARED ${Gumbo_SRCS})
 add_library(Gumbo_static STATIC ${Gumbo_SRCS})
 
